@@ -1,0 +1,47 @@
+.gallery-splash {
+  background-image: url("../images/ProductFeatures/Splashimage.png");
+  background-size: cover;
+  height: 8vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 99;
+}
+
+.album-grid {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.album-grid div {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0px;
+}
+
+.album-grid div a img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 85vh;
+  padding: 0;
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,152 @@
+.slate-splash {
+  background-image: url("../images/ProductFeatures/slate/classdark.png");
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div .product-grid1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div .product-grid1 #sketch img {
+  width: 50vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+div .product-grid1 #hovertext {
+  background-image: url("../images/ProductFeatures/slate/TABLET.355.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+}
+
+div .product-grid1 #hovertext div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  background-color: white;
+  padding: 50px;
+  opacity: 0%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 50px;
+  -webkit-transition: .8s all ease;
+  transition: .8s all ease;
+}
+
+div .product-grid1 #hovertext div h4 {
+  max-width: 500px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+div .product-grid1 #hovertext div p {
+  max-width: 500px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+div .product-grid1 #hovertext div:hover {
+  opacity: 100%;
+}
+
+div .product-grid1 #class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-top: 100px;
+}
+
+div .product-grid1 #class img {
+  width: 50vw;
+}
+
+div .product-grid1 #text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin-top: 100px;
+}
+
+div .product-grid1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+}
+
+div .product-grid1 div img {
+  width: 100vw;
+}
+
+div .product-grid1 .sidebyside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  justify-self: center;
+}
+
+div .product-grid1 .sidebyside img {
+  max-width: 33vw;
+}
+
+div .product-grid1 .sidebyside div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 100px;
+  max-width: 33vw;
+}
+
+div .product-grid1 .sidebyside div h4 {
+  max-width: 500px;
+}
+
+div .product-grid1 .sidebyside div p {
+  max-width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=slate.css.map */

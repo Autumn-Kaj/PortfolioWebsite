@@ -1,0 +1,219 @@
+.mus-splash {
+  background-image: url("../images/ProductFeatures/mus/musdark.png");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div .product-grid1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  max-width: 1920px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+div .product-grid1 #slide {
+  margin: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: #F9F9FA;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+div .product-grid1 #slide img {
+  width: 45vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+div .product-grid1 #slide div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+div .product-grid1 #slide div h4 {
+  max-width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-bottom: 10px;
+}
+
+div .product-grid1 #slide div p {
+  max-width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+div .product-grid1 #slide1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  margin-bottom: 100px;
+}
+
+div .product-grid1 #slide3 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+div .product-grid1 #slide3 h4 {
+  padding-bottom: 10px;
+}
+
+div .product-grid1 #slide3 p {
+  max-width: 1000px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+div .product-grid1 #slide4 img {
+  margin-top: 100px;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+section .carousel {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  height: 900px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+section .carousel .carousel-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .carousel .carousel-container {
+  background-color: #F9F9FA;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section .carousel .carousel-track {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+section .carousel .carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+section .carousel .carousel-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+section .carousel .carousel-btn--left {
+  left: -40px;
+}
+
+section .carousel .carousel-btn--right {
+  right: -40px;
+}
+
+section .carousel .carousel-btn img {
+  width: 12px;
+}
+
+section .carousel .carousel-nav {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+section .carousel .carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+section .carousel .carousel-indicator.current-slide {
+  background: rgba(0, 0, 0, 0.75);
+}
+/*# sourceMappingURL=mus.css.map */

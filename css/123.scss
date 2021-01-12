@@ -1,0 +1,124 @@
+@import "variables";
+
+//123 Page//
+.dark-large-title{
+    font-family: 'Noto Serif', serif;
+    color: $font_color_dark;
+    font-size: 10vh;
+}
+
+.dark-large-subhead{
+    font-family:'Work Sans', sans-serif;
+    color: $font_color_dark;
+    font-weight: 100 !important;
+}
+.table-header-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-auto-flow: column;
+    nav{ 
+        ul{
+            background-color: transparent;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: right;
+            }
+        li{
+            text-align: right;
+            justify-self: right;
+            padding-top: 25px;
+            }
+        
+        //Regular Menu Button Hover
+        .non-drop a{
+            transition: .4s all ease;
+            text-decoration: none;
+            color: $font_color_dark;
+            font-family:'Work Sans', sans-serif;
+            font-size: 20px;
+            border-bottom: 0px $font_color_dark;
+            }
+            
+        .non-drop a:hover{
+            color: $font_color_dark;
+            opacity: 70%;            
+            font-size:21px;
+            text-decoration: underline;
+            }
+        
+        //Dropdown Button Hover
+        a.dropdown-btn{
+            transition: .4s all ease;
+            text-decoration: none;
+            color: $font_color_dark;
+            font-family:'Work Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        a.dropdown-btn:hover{
+            color: $font_color_dark;
+            opacity: 70%;
+            font-size:21px;
+            text-decoration: underline;
+        }
+    }   
+}
+
+
+
+.table-splash{
+    background-image: url("../images/ProductFeatures/123/gif.gif");
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    display: flex;
+}
+
+div{
+    .product-grid1{
+        display:grid;
+        grid-template-columns: 1fr;
+        max-width:1920px;
+        justify-content:center;
+        #tables{
+            padding-top: 40vh;
+            padding-bottom: 40vh;
+        }
+        div{
+            justify-self: center;
+            img{
+                width:100vw;
+                }
+            }
+        }
+    }
+
+.back{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-top:100px;
+    margin-bottom:100px;
+    .btn{
+        padding:50px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        
+        a{
+            padding:50px;
+            text-decoration:none;
+            transition: .4s all ease;
+        }
+        a:hover{
+            color:$font_color_dark;
+            font-size:35px;
+            opacity:60%;
+            text-decoration: underline;
+        }
+    }
+}

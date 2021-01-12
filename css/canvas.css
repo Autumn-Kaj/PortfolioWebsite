@@ -1,0 +1,25 @@
+.canvas-splash {
+  background-image: url("../images/ProductFeatures/canvas/shoe.9Edit.png");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.canvas-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-items: center;
+}
+
+.canvas-grid .items img {
+  max-width: 80vw;
+  padding: 100px;
+}
+/*# sourceMappingURL=canvas.css.map */

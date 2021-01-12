@@ -1,0 +1,23 @@
+@import "variables";
+
+//Canvas// 
+.canvas-splash{
+    background-image: url("../images/ProductFeatures/canvas/shoe.9Edit.png");
+    background-size:cover;
+    background-position: center center;
+    height:100vh;
+    display: flex;
+}
+.canvas-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    margin-bottom:100px;
+    justify-items: center;
+    
+    .items img{
+        max-width: 80vw;
+        padding: 100px;
+    }
+}
+
