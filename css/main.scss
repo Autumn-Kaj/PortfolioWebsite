@@ -2,7 +2,11 @@
 @import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif|Work+Sans|Pacifico");
 
-//Global Styles//
+//////////Global Styles//////////
+
+//Variables//
+@import"variables";
+
 *{
     box-sizing: border-box;
 }
@@ -15,16 +19,6 @@ html.sr .load-hidden {
     margin:0;
     text-align: center;
 }
-
-@import"variables";
-
-//Page Styles//
-@import "about";
-@import"123";
-@import"canvas";
-@import"gallery";
-@import"mus";
-@import"slate";
 
 //Font//
 .large-title{
@@ -50,39 +44,76 @@ p{
     color:#6D6E71;
     font-weight: 100;
 }
-//Grid//
 
+
+//Page Styles//
+@import "about";
+@import"gallery";
+@import"123";
+@import"canvas";
+@import"mus";
+@import"slate";
+
+
+
+//Navigation//
 .header-grid{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-auto-flow: column;
-}
-
-//Navigation//
-
-.header-grid nav ul{
-    background-color: transparent;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    align-items: right;
-}
-
-nav .non-drop{
-    text-align: right;
-    justify-self: right;
-    padding-top: 25px;
-}
-    
-nav .dropdown{
-    padding-top: 25px;
-    text-align: right;
-    justify-self: right;
+    z-index: 99;
+    nav{ 
+        ul{
+            background-color: transparent;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: right;
+            z-index: 99;
+        }
+        
+        .non-drop{
+            text-align: right;
+            justify-self: right;
+            padding-top: 25px;
+            a{
+                transition: .4s all ease;
+                text-decoration: none;
+                color: $font_color_light;
+                font-family:'Work Sans', sans-serif;
+                font-size: 20px;
+                border-bottom: 0px white;
+            }
+            a:hover{
+                color: $font_color_light;
+                opacity: 70%;
+                text-decoration: underline;
+            }
+        }
+        
+        .dropdown{
+            padding-top: 25px;
+            text-align: right;
+            justify-self: right;
+            a{
+                transition: .4s all ease;
+                text-decoration: none;
+                color: $font_color_light;
+                font-family:'Work Sans', sans-serif;
+                font-size: 20px;
+            }
+            a:hover{
+                color: $font_color_light;
+                opacity: 70%;
+                text-decoration: underline;
+            }
+        }
+        
         .dropdown-btn{
             justify-content: right;
             display: flex;
@@ -91,6 +122,7 @@ nav .dropdown{
                 text-align: right;
             }
         }
+        
         .dropdown-content{
             text-justify:center;
             display: none;
@@ -104,7 +136,6 @@ nav .dropdown{
             padding-bottom: 20px;
             margin-left:-50%;
             margin-right:50%;
-            
             a{
                 transition: .4s all ease;
                 color: $font_color_light;
@@ -113,59 +144,31 @@ nav .dropdown{
                 text-decoration: none;
                 display: block;
                 text-align: center;
+            }
         }
     }
-}
-
-.dropdown a{
-    transition: .4s all ease;
-    text-decoration: none;
-    color: $font_color_light;
-    font-family:'Work Sans', sans-serif;
-    font-size: 20px;
-}
-
-.dropdown a:hover{
-    color: $font_color_light;
-    opacity: 70%;
-    font-size:21px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;}
 
-.non-drop a{
-    transition: .4s all ease;
-    text-decoration: none;
-    color: $font_color_light;
-    font-family:'Work Sans', sans-serif;
-    font-size: 20px;
-    border-bottom: 0px white;
-}
 
-.non-drop a:hover{
-    color: $font_color_light;
-    opacity: 70%;
-
-    font-size:21px;
-}
-
+///Social Media Icons///
 .socials img{
-    height:5vh;
-    width:5vh;
+    height:50px;
+    width:50px;
     padding-top:25px;
     padding-right: 30px;
     transition: .4s all ease;
-
 }
 
 .socials img:hover{
-    height:5.5vh;
-    width:5.5vh;
+    height:51px;
+    width:51px;
     opacity: 70%;
 }
 
-
+///Splash Page Image///
 .splash{
     background-image: url("../images/ProductFeatures/Splashimage.png");
     background-size:cover;
@@ -187,20 +190,23 @@ nav .dropdown{
     margin:0;
     z-index:2;
     align-content: center;
-
+    div{
         img{
-            padding-top: 200px;
+            margin-top: 200px;
             justify-self: center;
             align-self: center;
+            width:180px;
+            transition-property: width;
+            transition-duration: 0.6s;
             
         }
+        img:hover{
+            cursor: pointer;
+            opacity: 50%;
+            width:190px;
+        }
+    }
 }
-
-.splashitems img:hover{
-        opacity: 70%;
-}
-
-
 
 //Main Section//
 
@@ -319,15 +325,15 @@ footer{
             justify-self:center;
             img{
                 margin-top:50px;
-                height:3vh;
-                width:3vh;
-                padding-left:4px;
-                padding-right:4px;
+                height: 40px;
+                width: 40px;
+                padding-left:10px;
+                padding-right:10px;
                 transition: .4s all ease;
             }
             img:hover{
-                height:3.5vh;
-                width:3.5vh;
+                height:41px;
+                width:41px;
                 opacity: 70%;
             }
             p{

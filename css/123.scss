@@ -1,6 +1,7 @@
 @import "variables";
 
 //123 Page//
+///Fonts///
 .dark-large-title{
     font-family: 'Noto Serif', serif;
     color: $font_color_dark;
@@ -12,6 +13,9 @@
     color: $font_color_dark;
     font-weight: 100 !important;
 }
+
+///Nav///
+//Navigation//
 .table-header-grid{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -28,29 +32,83 @@
             padding: 0;
             list-style: none;
             align-items: right;
-            }
-        li{
+        }
+        
+        .non-drop{
             text-align: right;
             justify-self: right;
             padding-top: 25px;
+            a{
+                transition: .4s all ease;
+                text-decoration: none;
+                color: $font_color_dark;
+                font-family:'Work Sans', sans-serif;
+                font-size: 20px;
+                border-bottom: 0px $font_color_dark;
             }
+            a:hover{
+                color: $font_color_dark;
+                opacity: 70%;            
+                text-decoration: underline;
+            }
+        }
         
-        //Regular Menu Button Hover
-        .non-drop a{
-            transition: .4s all ease;
-            text-decoration: none;
-            color: $font_color_dark;
-            font-family:'Work Sans', sans-serif;
-            font-size: 20px;
-            border-bottom: 0px $font_color_dark;
+        .dropdown{
+            padding-top: 25px;
+            text-align: right;
+            justify-self: right;
+            a{
+                transition: .4s all ease;
+                text-decoration: none;
+                color: $font_color_dark;
+                font-family:'Work Sans', sans-serif;
+                font-size: 20px;
             }
-            
-        .non-drop a:hover{
-            color: $font_color_dark;
-            opacity: 70%;            
-            font-size:21px;
-            text-decoration: underline;
+            a:hover{
+                color: $font_color_dark;
+                opacity: 70%;
+                text-decoration: underline;
             }
+        }
+        
+        .dropdown-btn{
+            justify-content: right;
+            display: flex;
+            a{
+                justify-self: right;
+                text-align: right;
+            }
+        }
+        
+        .dropdown-content{
+            text-justify:center;
+            display: none;
+            position: absolute;
+            background-color: $font_color_light;
+            min-width: 150px;
+            min-height: 200px;
+            z-index: 1;
+            border: 1px solid black;
+            padding-top:20px;
+            padding-bottom: 20px;
+            margin-left:-50%;
+            margin-right:50%;
+            a{
+                transition: .4s all ease;
+                color: $font_color_dark;
+                font-size: 16px;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
         
         //Dropdown Button Hover
         a.dropdown-btn{
@@ -65,13 +123,9 @@
             color: $font_color_dark;
             opacity: 70%;
             font-size:21px;
-            text-decoration: underline;
-        }
-    }   
-}
+            text-decoration: underline;}
 
-
-
+///Splash Page///
 .table-splash{
     background-image: url("../images/ProductFeatures/123/gif.gif");
     background-size:cover;
@@ -99,24 +153,29 @@ div{
         }
     }
 
+///back button///
 .back{
     display:grid;
     grid-template-columns: 1fr;
     margin-top:100px;
     margin-bottom:100px;
     .btn{
-        padding:50px;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+        width:400px;
+        align-self: center;
+        justify-self: center;
         
         a{
-            padding:50px;
-            text-decoration:none;
+            font-size: 25px;
+            color: $font_color_dark;
+            font-family: 'Noto Serif', serif;
+            text-decoration: none;
             transition: .4s all ease;
         }
         a:hover{
             color:$font_color_dark;
-            font-size:35px;
+            font-size:27px;
             opacity:60%;
             text-decoration: underline;
         }
