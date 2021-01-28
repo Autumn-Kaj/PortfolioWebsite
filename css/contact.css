@@ -1,0 +1,31 @@
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
+
+.contact .right-contact {
+  width: 50vw;
+}
+
+.contact .right-contact .contact-group .socials-info .socials-items img {
+  width: 30px;
+}
+
+.contact .right-contact .contact-group .socials-info .socials-items a {
+  text-decoration: none;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  font-style: 'Work Sans', sans-serif;
+  font-size: 20px;
+  color: f;
+}
+
+.contact .left-contact {
+  width: 50vw;
+}
+/*# sourceMappingURL=contact.css.map */
