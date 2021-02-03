@@ -6,8 +6,8 @@ $(document).ready(function(){
 });
 /*Main Page*/
 ScrollReveal().reveal('#scroll-button', { duration: 3000, distance: '40px', origin: 'top', });
-ScrollReveal().reveal('.gallery-grid', { duration: 2000,});
-ScrollReveal().reveal('.about-grid', { duration: 2000, delay:500,});
+ScrollReveal().reveal('.gallery-grid', { duration: 2000, distance: '200px', origin: 'left'});
+ScrollReveal().reveal('.about-grid', { duration: 2000, delay:500,distance: '200px', origin: 'right'});
 
 /*About*/
 ScrollReveal().reveal('#slide-in', {duration: 2000, distance:'90px', origin:'right'})
@@ -37,9 +37,15 @@ $(document).ready(function(){
         $('#left-hover').attr("src", "images/Portraits/contact.png")
     });
 });
+ScrollReveal().reveal('.left-contact', {duration: 2000,distance:'500px', origin:'left'})
+ScrollReveal().reveal('.right-contact', {duration: 2000,distance:'500px', origin:'right'})
 
 /*123 Page*/
-ScrollReveal().reveal('#what-if-fade', {duration: 6000})
+ScrollReveal().reveal('#what-if-fade', {duration: 4000})
+ScrollReveal().reveal('#table-one', {duration: 2000, distance:'500px', origin:'right'})
+ScrollReveal().reveal('#table-two', {duration: 2000, delay:500,distance:'500px', origin:'right'})
+ScrollReveal().reveal('#table-three', {duration: 2000, delay:1000,distance:'500px', origin:'right'})
+
 $(document).ready(function(){
     $('#table-sketch').mouseenter(function(){
         $('#table-sketch').attr("src", "images/ProductFeatures/123/sketch-overlay.png")
@@ -53,5 +59,29 @@ $(document).ready(function(){
     });
     $('#table-sketch2').mouseleave(function(){
         $('#table-sketch2').attr("src", "images/ProductFeatures/123/fluer1.png")
+    });
+});
+
+/*Slate*/
+$(document).ready(function(){
+    $('#square1').mouseenter(function(){
+        $('#square1').attr("src", "images/ProductFeatures/slate/lightboard1.png")
+    });
+    $('#square1').mouseleave(function(){
+        $('#square1').attr("src", "images/ProductFeatures/slate/lightboard.png")
+    });
+
+    $('#square2').mouseenter(function(){
+        $('#square2').attr("src", "images/ProductFeatures/slate/TabletSquare1.png")
+    });
+    $('#square2').mouseleave(function(){
+        $('#square2').attr("src", "images/ProductFeatures/slate/TabletSquare.png")
+    });
+
+    $('#square3').mouseenter(function(){
+        $('#square3').attr("src", "images/ProductFeatures/slate/PenSquare1.png")
+    });
+    $('#square3').mouseleave(function(){
+        $('#square3').attr("src", "images/ProductFeatures/slate/PenSquare.png")
     });
 });

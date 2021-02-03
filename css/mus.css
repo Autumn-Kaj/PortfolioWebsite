@@ -130,7 +130,6 @@ section .carousel {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
-  height: 900px;
   width: 80%;
   margin: 0 auto;
   padding-top: 100px;

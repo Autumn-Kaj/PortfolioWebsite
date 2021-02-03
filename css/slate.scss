@@ -2,9 +2,9 @@
 
 ///Slate///
 .slate-splash{
-    background-image: url("../images/ProductFeatures/slate/classdark.png");
+    background-image: url("../images/ProductFeatures/slate/darkboard.png");
     background-size:cover;
-    background-position: top center;
+    background-position: bottom center;
     height:100vh;
     display: flex;
 }
@@ -14,13 +14,140 @@ div{
         display:grid;
         grid-template-columns: 1fr;
         justify-content:center;
-        #sketch img{
-            width:50vw;
+        background-color: #F9F9FA;
+        .students{
             margin-top: 100px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+            width:100vw;
+
+            #ipadkid{
+            width:50vw;
+            }
+            #computerkid{
+                width:40vw;
+                justify-self: right;
+            }
+            #classroom{
+                width:40vw;
+            }
+            div{
+                display:grid;
+                grid-template-columns: 1fr;
+                align-content: space-around;
+                align-self: center;
+                justify-content:center;
+                padding:100px;
+                width:33vw;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                
+                h4{
+                    width: 34vw;   
+                }
+                p{
+                    width: 34vw;
+                    padding:10px 15px 0px 15px;
+                    align-self:center;
+                    border-left: 1px solid black;
+                    font-size: 18px;
+                }
+            }
+        }
+        #video{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-content: center;
+            margin-top:100px;
             margin-bottom:100px;
+            img{
+                width:95vw;
+            }
+        }
+        #mission{
+            width:100vw;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height:60vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-content: center;
+            background-image: url("../images/ProductFeatures/slate/papers.jpg");
+            background-size: cover;
+            div{
+                padding:50px;
+                align-self:center;
+                justify-self:center;
+                background-color: white;
+                box-shadow: 10px 20px 40px black;
+                h4{
+                    width:80vw;
+                    opacity:80%;
+                    padding:25px;
+                    text-align: center;
+                }
+            }
+        }
+        #slatesketch{
+            width:100vw;
+            margin:100px 0px;
+            display: grid;
+            grid-template-rows: 1fr;
+            background-color: white;
+            img{
+                width:70vw;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+        .sidebyside{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width:100vw;
+            align-content: center;
+            justify-content: center;
+            gap:0px;
+            background-color: white;
+            img{
+                width:33vw;
+                align-self: center;
+                justify-content: center;
+            }
+            div{
+                display:grid;
+                grid-template-columns: 1fr;
+                align-content: space-around;
+                align-self: center;
+                justify-content:center;
+                padding:100px;
+                width:33vw;
+                
+                #not-centered-title{
+                    width: 25vw;   
+                }
+                #center-title{
+                    width:25vw;
+                    text-align: center;
+                }
+                #center-text{
+                    width: 25vw;
+                    padding:10px 15px 0px 15px;
+                    align-self:center;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                #non-centered{
+                    width: 25vw;
+                    padding:10px 15px 0px 15px;
+                    align-self:center;
+                    border-left: 1px solid black;
+                    font-size: 18px;
+                }
+            }
         }
         #hovertext{
-                background-image: url("../images/ProductFeatures/slate/TABLET.355.png");
+                background-image: url("../images/ProductFeatures/slate/Tablet.355.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position:center;
@@ -52,8 +179,9 @@ div{
             }
         
         #class{
-            display:flex;
+            display:grid;
             align-content:space-between;
+            grid-template-columns: 1fr 1fr;
             margin-top: 100px;
             img{
                 width: 50vw;
@@ -65,8 +193,11 @@ div{
             grid-template-columns: 1fr;
             align-content: center;
             text-align: center;
-            max-width: 1000px;
-            margin-top:100px;
+            width: 70vw;
+            margin:100px 0px;
+            background-color: white;
+            padding:50px 25px;
+            box-shadow: 10px 20px 40px gray;
 
         }
 
@@ -77,30 +208,5 @@ div{
                 width:100vw;
                 }
             }
-        .sidebyside{
-            display:flex;
-            align-content: space-around;
-            justify-self: center;
-            img{
-                max-width:33vw;
-            }
-            div{
-                display:grid;
-                grid-template-columns: 1fr;
-                align-content: space-around;
-                align-self: center;
-                justify-content:center;
-                text-align: center;
-                padding:100px;
-                max-width:33vw;
-                h4{
-                    max-width: 500px;   
-                }
-                p{
-                    max-width: 500px;
-                    align-self:center;
-                }
-            }
-        }
     }
 }
